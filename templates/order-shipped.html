@@ -1,0 +1,39 @@
+{{ define "content"}}
+<tr>
+  <td>
+    <p style="font-size: 14px">
+      Good news! The status of your order
+      <span style="font-weight: 700"> #MAZ-{{.Reference}}</span> has been
+      updated. Your order is now
+      <span style="font-weight: 700"> [Out For Delivery] </span>.
+    </p>
+  </td>
+</tr>
+
+<tr align="center">
+  <td>
+    <a href="https://mazimart.com.ng/account">
+      <button
+        style="
+          background-color: #009cff;
+          color: white;
+          font-size: 1.125rem;
+          border-radius: 0.5rem;
+          border: none;
+          padding: 0.5rem 2rem;
+        "
+      >
+        View order
+      </button>
+    </a>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <p>
+      Thank you for your patience. We will keep you updated on the progress.
+    </p>
+  </td>
+</tr>
+{{end}}

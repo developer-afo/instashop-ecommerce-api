@@ -1,0 +1,66 @@
+{{define "content"}}
+<tr>
+  <td>
+    <p style="font-size: 14px">
+      Thank you for your purchase! Your order
+      <span style="font-weight: 700">#MAZ-{{.Reference}}</span> has been
+      successfully placed. We will notify you once it’s shipped.
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <p>Order summary:</p>
+    <ul>
+      <li>Order Number:&nbsp;{{.Reference}}</li>
+      <li>
+        Items:
+        <br />
+        <br />
+        <ul>
+          {{range .Items}}
+          <li>{{.Name}}&nbsp;x{{.Quantity}}</li>
+          {{end}}
+        </ul>
+      </li>
+      <li>Total Amount:&nbsp;{{.TotalAmount}}</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <p>
+      Please note that your order is currently being processed by our team. You
+      can also track your order and view its status in real time by signing in
+      to your account and accessing your dashboard.
+    </p>
+  </td>
+</tr>
+
+<tr align="center">
+  <td>
+    <a href="https://instashop.com/account">
+      <button
+        style="
+          background-color: #009cff;
+          color: white;
+          font-size: 1.125rem;
+          border-radius: 0.5rem;
+          border: none;
+          padding: 0.5rem 2rem;
+        "
+      >
+        View order status
+      </button>
+    </a>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <p>We hope you enjoy your snacks! Thank you for shopping with Instashop.</p>
+  </td>
+</tr>
+{{end}}
